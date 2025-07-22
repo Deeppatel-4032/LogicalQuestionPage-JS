@@ -235,18 +235,18 @@
 // 12345
 // row count
 
-for (let i = 1; i <= 5; i++) {
-  if (i % 2 == 0) {
-    for (let j = 1; j <= i; j++) {
-      document.write(" *");
-    }
-  } else {
-    for (let j = 1; j <= i; j++) {
-      document.write(j + " ");
-    }
-  }
+// for (let i = 1; i <= 5; i++) {
+//   if (i % 2 == 0) {
+//     for (let j = 1; j <= i; j++) {
+//       document.write(" *");
+//     }
+//   } else {
+//     for (let j = 1; j <= i; j++) {
+//       document.write(j + " ");
+//     }
+//   }
 
-  document.write("<br>");
-}
+//   document.write("<br>");
+// }
 
 // ==============================================================================

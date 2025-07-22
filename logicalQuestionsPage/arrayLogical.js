@@ -16,6 +16,19 @@
 //traverse word mening --> accesing all elements --> loop thi traverse kari sakay
 //  forloop no vadhare use thay because essay to anderstand and read  traveres karva
 
+// ========================================================================================================
+
+// wap to search in array index value
+
+// let arr = [2, 4, 5, 3, 7, 8];
+// let search = 5;
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] == search) {
+//     console.log("found the index value ", arr[i]);
+//   }
+// }
+
 // ======================================================================================
 
 // 2. wap to array element sum or average --> use case --> toodAp ma // final amount / discount amount / lone intrest / EMI calculatore
