@@ -168,17 +168,17 @@
 
 // wap to facter nummer using while loop
 
-let num = 34; // You can change this number
-let i = 1;
+// let num = 34; // You can change this number
+// let i = 1;
 
-console.log("Factors of " + num + " are:");
+// console.log("Factors of " + num + " are:");
 
-while (i <= num) {
-  if (num % i === 0) {
-    console.log(i);
-  }
-  i++;
-}
+// while (i <= num) {
+//   if (num % i === 0) {
+//     console.log(i);
+//   }
+//   i++;
+// }
 
 // ======================================================================================
 
@@ -201,6 +201,7 @@ while (i <= num) {
 // 0+1=1
 // 1+1=2
 // 1+2=3
+// 2+3-5
 // 3 + 5 = 8
 // 5 + 8 = 13
 // 8 + 13 = 21

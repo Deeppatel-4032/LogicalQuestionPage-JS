@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debouncing</title>
+</head>
+
+<body>
+  <h1>search with debouncing in javascript</h1>
+  <input type="text" id="searchIn" placeholder="type Data">
+  <div class="results" id="results"></div>
+
+
+  <script>
+
+    // debouncing helper function
+    function debounce(fun, delay) {
+      let timer;
+      return function (...args) {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          fun.apply(this, args);
+        }, delay)
+      }
+    }
+    // api call
+    function fetchData(query) {
+      document.getElementById("results")
+        .innerHTML = `fetching result for: <b>${query}</b>`;
+      console.log("API Call", query);
+
+    }
+
+    const debouncedFetch = debounce(fetchData, 500);
+
+    // attach to the search input
+    document.getElementById("searchIn").addEventListener("input", function (e) {
+      const query = e.target.value.trim();
+
+      if (query) {
+        debouncedFetch(query);
+      } else {
+        document.getElementById("results").innerHTML;
+      }
+    })
+  </script>
+</body>
+
+</html>
